@@ -12,7 +12,7 @@ const Budgets = () => {
 
   const fetchBudgets = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/budgets")
+      const res = await fetch("https://yardstick-assignment-v5bv.onrender.com/api/budgets")
       const data = await res.json()
       setBudgets(data || {})
     } catch (err) {
@@ -22,7 +22,7 @@ const Budgets = () => {
 
   const fetchTransactions = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/transactions")
+      const res = await fetch("https://yardstick-assignment-v5bv.onrender.com/api/transactions")
       const data = await res.json()
       setTransactions(data)
     } catch (err) {
@@ -42,7 +42,7 @@ const Budgets = () => {
     if (Number(amount) <= 0) return alert("Amount must be greater than 0.")
 
     try {
-      await fetch("http://localhost:5000/api/budgets", {
+      await fetch("https://yardstick-assignment-v5bv.onrender.com/api/budgets", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ category, amount }),
