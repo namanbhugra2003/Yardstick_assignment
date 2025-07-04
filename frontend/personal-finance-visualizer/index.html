@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Visualizer</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      }
+    </script>
+  </head>
+<body
+  class="bg-cover bg-center bg-no-repeat min-h-screen text-gray-900 font-sans"
+  style="background-image: url('/bg.jpg'); background-attachment: fixed;"
+>
+
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
