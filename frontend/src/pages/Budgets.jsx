@@ -12,7 +12,7 @@ const Budgets = () => {
 
   const fetchBudgets = async () => {
     try {
-      const res = await fetch("https://yardstick-assignment-90mo.onrender.com//api/budgets")
+      const res = await fetch("https://yardstick-assignment-90mo.onrender.com/api/budgets")
       const data = await res.json()
       setBudgets(data || {})
     } catch (err) {
