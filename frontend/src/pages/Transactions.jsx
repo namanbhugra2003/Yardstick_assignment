@@ -12,7 +12,7 @@ const Transactions = () => {
 
   const fetchTransactions = async () => {
     try {
-      const res = await fetch("https://yardstick-assignment-90mo.onrender.com/api/transactions")
+      const res = await fetch("https://yardstick-assignment-v5bv.onrender.com/api/transactions")
       const data = await res.json()
       setTransactions(data)
     } catch (err) {
@@ -23,13 +23,13 @@ const Transactions = () => {
   const addTransaction = async (data) => {
     try {
       if (editData && editData._id) {
-        await fetch(`https://yardstick-assignment-90mo.onrender.com/api/transactions/${editData._id}`, {
+        await fetch(`https://yardstick-assignment-v5bv.onrender.com/api/transactions/${editData._id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         })
       } else {
-        await fetch("https://yardstick-assignment-90mo.onrender.com/api/transactions", {
+        await fetch("https://yardstick-assignment-v5bv.onrender.com/api/transactions", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
@@ -46,7 +46,7 @@ const Transactions = () => {
   const deleteTransaction = async (id) => {
     if (!confirm("Delete this transaction?")) return
     try {
-      await fetch(`https://yardstick-assignment-90mo.onrender.com/api/transactions/${id}`, {
+      await fetch(`https://yardstick-assignment-v5bv.onrender.com/api/transactions/${id}`, {
         method: "DELETE",
       })
       fetchTransactions()
