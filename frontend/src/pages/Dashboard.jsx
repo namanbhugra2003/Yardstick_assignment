@@ -8,7 +8,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("https://yardstick-assignment-90mo.onrender.com/api/transactions")
+        const res = await fetch("https://yardstick-assignment-v5bv.onrender.com//api/transactions")
         const data = await res.json()
         setTransactions(data)
       } catch (err) {
