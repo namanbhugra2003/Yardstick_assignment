@@ -1,84 +1,84 @@
+# 💰 Personal Finance Visualizer
 
-🧾 Yardstick Assignment
+## 📖 Overview
+The Personal Finance Visualizer is a MERN-based web app that helps users track their daily expenses and analyze their spending habits through dynamic visualizations. It is designed to bring financial awareness and promote better budgeting for students and individuals.
 
-A full-stack budget and expense tracker for managing your finances with ease. Add transactions, set monthly budgets, and monitor your spending visually through charts.
+---
 
- ✨ Features
+## 📚 Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Live Demo](#live-demo)
+- [Credits](#credits)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
 
-- 💰 Add, edit, delete transactions  
-- 📊 Visualize expenses by category and month  
-- 🎯 Set and update budgets for different categories  
-- 🚀 Responsive UI with Tailwind CSS  
-- 🔄 Data persistence with MongoDB Atlas  
+---
 
- 🛠 Tech Stack
+## 📄 Description
+Budgeting is often overlooked due to a lack of user-friendly tools. This app was developed to provide a clear, responsive, and secure platform for managing personal finances with charts, summaries, and filtered views.
 
-Frontend: React, Tailwind CSS, Recharts  
-Backend: Node.js, Express.js  
-Database: MongoDB Atlas  
+---
 
- Getting Started
+## ✨ Features
+- User authentication with secure sessions
+- Visualizations using Recharts (spending by category, date, and tags)
+- Responsive UI with Tailwind CSS for multi-device access
+- Upload images for receipts or expenses
+- Category-based filtering and financial summaries
 
- 1. Clone the repository
+---
 
+## 🛠 Installation
 ```bash
+# Clone the repository
 git clone https://github.com/namanbhugra2003/Yardstick_assignment.git
 cd Yardstick_assignment
-```
 
- 2. Install dependencies
-
-Backend:
-
-```bash
-cd backend
+# Install dependencies for client and server
+cd client
 npm install
-```
-
-Frontend:
-
-```bash
-cd ../frontend
+cd ../server
 npm install
-```
 
-
-
- 3. Start the Application
-
-Backend:
-
-```bash
+# Start the development servers
 npm start
 ```
+Make sure MongoDB is installed and configured locally or via MongoDB Atlas.
 
-Frontend:
+---
 
-```bash
-npm run dev
-```
+## 🚀 Usage
+1. Register or log in.
+2. Add expenses with category, amount, and optional image.
+3. View spending trends via charts and summaries.
+4. Filter expenses by category or time frame for better insights.
 
-📂 Project Structure
+---
 
-```
-Yardstick_assignment/
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── .env
-│   └── server.js
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   └── App.jsx
-└── README.md
-```
+## 🌐 Live Demo
+[Frontend Live](https://yardstick-assignment-90mo.onrender.com/)  
+[GitHub Repo](https://github.com/namanbhugra2003/Yardstick_assignment)
 
- 🤝 Contributing
+---
 
-Contributions are welcome! Feel free to fork the repo and open a pull request.
+## 👥 Credits
+Built by [Naman Bhugra](https://github.com/namanbhugra2003). Inspired by common student financial tracking problems.
 
- 👤 Author
+---
 
-Naman Bhugra  
-[GitHub](https://github.com/namanbhugra2003)
+## 📄 License
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork, create a feature branch, and submit a pull request.
+
+---
+
+## 🧪 Tests
+Manual UI and UX testing done across devices. Automated testing will be added in future versions.
